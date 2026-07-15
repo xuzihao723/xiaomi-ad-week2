@@ -1,0 +1,10 @@
+path: ../data/yolo_carla_reviewed
+train: images/test
+val: images/test
+test: images/test
+
+names:
+  0: Car
+  1: Pedestrian
+  2: TrafficLight
+  3: TrafficSign

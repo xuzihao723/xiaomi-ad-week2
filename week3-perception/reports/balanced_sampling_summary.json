@@ -1,0 +1,71 @@
+{
+  "source": "data/yolo_grouped_runtime",
+  "output": "data/yolo_balanced_runtime",
+  "extra_copies_per_minority_image": {
+    "Pedestrian": 4,
+    "TrafficSign": 2
+  },
+  "splits": {
+    "train": {
+      "source_images": 960,
+      "output_images": 2240,
+      "added_training_aliases": 1280,
+      "aliases_by_reason": {
+        "Pedestrian": 748,
+        "TrafficSign": 532
+      },
+      "source_objects": {
+        "Car": 2776,
+        "Pedestrian": 189,
+        "TrafficLight": 4223,
+        "TrafficSign": 571
+      },
+      "output_objects": {
+        "Car": 7684,
+        "Pedestrian": 991,
+        "TrafficLight": 11507,
+        "TrafficSign": 1813
+      }
+    },
+    "val": {
+      "source_images": 340,
+      "output_images": 340,
+      "added_training_aliases": 0,
+      "aliases_by_reason": {},
+      "source_objects": {
+        "Car": 404,
+        "Pedestrian": 138,
+        "TrafficLight": 3291,
+        "TrafficSign": 320
+      },
+      "output_objects": {
+        "Car": 404,
+        "Pedestrian": 138,
+        "TrafficLight": 3291,
+        "TrafficSign": 320
+      }
+    },
+    "test": {
+      "source_images": 300,
+      "output_images": 300,
+      "added_training_aliases": 0,
+      "aliases_by_reason": {},
+      "source_objects": {
+        "Car": 602,
+        "Pedestrian": 125,
+        "TrafficLight": 2480,
+        "TrafficSign": 265
+      },
+      "output_objects": {
+        "Car": 602,
+        "Pedestrian": 125,
+        "TrafficLight": 2480,
+        "TrafficSign": 265
+      }
+    }
+  },
+  "integrity": {
+    "validation_or_test_oversampled": false,
+    "cross_split_copying": false
+  }
+}

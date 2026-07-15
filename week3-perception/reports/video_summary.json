@@ -1,8 +1,11 @@
 {
-  "output": "demo\\yolov8_detection_demo_1min.mp4",
+  "output": "demo/yolov8_detection_demo_1min.mp4",
+  "method": "class_specialized_prediction_fusion",
   "frames": 1000,
   "fps": 15.0,
-  "duration_seconds": 66.66666666666667,
+  "duration_seconds": 66.666667,
   "width": 1280,
-  "height": 720
+  "height": 720,
+  "codec": "h264",
+  "decode_check": "passed_1000_of_1000_frames"
 }

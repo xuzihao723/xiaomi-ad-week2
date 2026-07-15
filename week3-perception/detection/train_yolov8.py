@@ -15,6 +15,20 @@ def parse_args():
     parser.add_argument("--name", default="train")
     parser.add_argument("--patience", type=int, default=20)
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--fraction", type=float, default=1.0)
+    parser.add_argument("--save-period", type=int, default=1)
+    parser.add_argument("--close-mosaic", type=int, default=10)
+    parser.add_argument(
+        "--mosaic",
+        type=float,
+        default=1.0,
+        help="Mosaic augmentation probability (0 disables it).",
+    )
+    parser.add_argument("--optimizer", default="auto")
+    parser.add_argument("--lr0", type=float, default=0.01)
+    parser.add_argument("--lrf", type=float, default=0.01)
+    parser.add_argument("--weight-decay", type=float, default=0.0005)
+    parser.add_argument("--warmup-epochs", type=float, default=3.0)
     parser.add_argument("--resume", action="store_true")
     parser.add_argument(
         "--amp",
@@ -50,6 +64,16 @@ def main():
         resume=args.resume,
         amp=args.amp,
         cache=args.cache,
+        fraction=args.fraction,
+        save_period=args.save_period,
+        close_mosaic=args.close_mosaic,
+        mosaic=args.mosaic,
+        optimizer=args.optimizer,
+        lr0=args.lr0,
+        lrf=args.lrf,
+        weight_decay=args.weight_decay,
+        warmup_epochs=args.warmup_epochs,
+        deterministic=True,
         plots=True,
     )
     print("Training complete")

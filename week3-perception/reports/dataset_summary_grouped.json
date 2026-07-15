@@ -1,0 +1,75 @@
+{
+  "split_strategy": "scenario_grouped",
+  "original_sequence_policy": "100-frame contiguous groups; blocks 0-5 train, block 7 val, block 9 test; blocks 6 and 8 are leakage buffers",
+  "discarded_original_buffer_images": 200,
+  "splits": {
+    "test": 300,
+    "train": 960,
+    "val": 340
+  },
+  "groups": {
+    "test": [
+      "town05_clear_night_seed302",
+      "town05_hard_rain_seed301",
+      "town10_block_09"
+    ],
+    "train": [
+      "town05_clear_noon_seed101",
+      "town05_clear_sunset_seed103",
+      "town05_wet_cloudy_seed102",
+      "town10_block_00",
+      "town10_block_01",
+      "town10_block_02",
+      "town10_block_03",
+      "town10_block_04",
+      "town10_block_05"
+    ],
+    "val": [
+      "town05_cloudy_noon_seed202",
+      "town05_soft_rain_sunset_seed201",
+      "town10_block_07"
+    ]
+  },
+  "group_overlap": false,
+  "exact_image_hash_overlap": false,
+  "per_split_object_counts": {
+    "train": {
+      "Car": 2776,
+      "Pedestrian": 189,
+      "TrafficLight": 4223,
+      "TrafficSign": 571
+    },
+    "val": {
+      "Car": 404,
+      "Pedestrian": 138,
+      "TrafficLight": 3291,
+      "TrafficSign": 320
+    },
+    "test": {
+      "Car": 602,
+      "Pedestrian": 125,
+      "TrafficLight": 2480,
+      "TrafficSign": 265
+    }
+  },
+  "per_split_frame_counts": {
+    "train": {
+      "Car": 827,
+      "Pedestrian": 187,
+      "TrafficLight": 626,
+      "TrafficSign": 266
+    },
+    "val": {
+      "Car": 100,
+      "Pedestrian": 77,
+      "TrafficLight": 339,
+      "TrafficSign": 239
+    },
+    "test": {
+      "Car": 100,
+      "Pedestrian": 100,
+      "TrafficLight": 300,
+      "TrafficSign": 210
+    }
+  }
+}

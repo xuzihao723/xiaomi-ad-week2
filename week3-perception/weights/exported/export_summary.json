@@ -1,0 +1,9 @@
+{
+  "source": "weights/traffic_control_best.pt",
+  "imgsz": 640,
+  "batch": 1,
+  "exports": {
+    "onnx_fp32": "weights/exported/traffic_control_best_fp32.onnx",
+    "tensorrt_fp16": "weights/exported/traffic_control_best_fp16.engine"
+  }
+}

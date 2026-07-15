@@ -1,0 +1,9 @@
+data/raw/
+data/yolo_carla/
+data/yolo_carla_reviewed/
+runs/
+weights/*.pt
+demo/*.mp4
+__pycache__/
+*.pyc
+.venv/

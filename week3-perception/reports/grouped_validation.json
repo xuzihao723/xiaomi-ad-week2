@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "dataset_root": "data/yolo_grouped",
+  "splits": {
+    "train": {
+      "images": 960,
+      "labels": 960,
+      "empty_labels": 72,
+      "object_counts": {
+        "Car": 2776,
+        "Pedestrian": 189,
+        "TrafficLight": 4223,
+        "TrafficSign": 571
+      },
+      "frame_counts": {
+        "Car": 827,
+        "Pedestrian": 187,
+        "TrafficLight": 626,
+        "TrafficSign": 266
+      }
+    },
+    "val": {
+      "images": 340,
+      "labels": 340,
+      "empty_labels": 0,
+      "object_counts": {
+        "Car": 404,
+        "Pedestrian": 138,
+        "TrafficLight": 3291,
+        "TrafficSign": 320
+      },
+      "frame_counts": {
+        "Car": 100,
+        "Pedestrian": 77,
+        "TrafficLight": 339,
+        "TrafficSign": 239
+      }
+    },
+    "test": {
+      "images": 300,
+      "labels": 300,
+      "empty_labels": 0,
+      "object_counts": {
+        "Car": 602,
+        "Pedestrian": 125,
+        "TrafficLight": 2480,
+        "TrafficSign": 265
+      },
+      "frame_counts": {
+        "Car": 100,
+        "Pedestrian": 100,
+        "TrafficLight": 300,
+        "TrafficSign": 210
+      }
+    }
+  }
+}

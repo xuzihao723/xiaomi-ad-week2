@@ -1,0 +1,33 @@
+{
+  "comparison_rule": "same_strict_grouped_test_and_same_fusion_evaluator",
+  "test_images": 300,
+  "test_targets": 3472,
+  "baseline": {
+    "description": "legacy road-user checkpoint used for all four classes",
+    "mAP50": 0.4727167635989385,
+    "mAP50_95": 0.3613192061784688
+  },
+  "final": {
+    "description": "class-specialized road-user plus traffic-control fusion",
+    "mAP50": 0.7038657367379021,
+    "mAP50_95": 0.40335945870896117
+  },
+  "absolute_improvement": {
+    "mAP50": 0.2311489731389636,
+    "mAP50_95": 0.04204025253049236
+  },
+  "per_class_mAP50": {
+    "Car": {"baseline": 0.856545292077671, "final": 0.856545292077671},
+    "Pedestrian": {"baseline": 0.8824067917309142, "final": 0.8824067917309142},
+    "TrafficLight": {"baseline": 0.14941497058716874, "final": 0.5222908350303339},
+    "TrafficSign": {"baseline": 0.0024999999999999996, "final": 0.5542200281126896}
+  },
+  "ultralytics_single_model_cross_check": {
+    "baseline_mAP50": 0.477873,
+    "baseline_mAP50_95": 0.364534,
+    "absolute_delta_from_custom_evaluator": {
+      "mAP50": 0.0051562364010615,
+      "mAP50_95": 0.0032147938215312
+    }
+  }
+}

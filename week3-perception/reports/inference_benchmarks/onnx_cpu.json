@@ -1,0 +1,17 @@
+{
+  "weights": "weights/exported/traffic_control_best_fp32.onnx",
+  "secondary_weights": null,
+  "method": "single_model",
+  "source": "data/yolo_carla/images/test",
+  "images": 150,
+  "imgsz": 640,
+  "device": "cpu",
+  "half": false,
+  "preloaded": true,
+  "mean_latency_ms": 23.9387319600002,
+  "median_latency_ms": 23.756560499997192,
+  "p95_latency_ms": 25.72157599999514,
+  "min_latency_ms": 22.343285999994578,
+  "max_latency_ms": 28.857379000001515,
+  "fps": 41.77330702691036
+}

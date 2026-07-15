@@ -1,0 +1,61 @@
+{
+  "method": "class_specialized_prediction_fusion",
+  "road_user_weights": "weights/road_user_best.pt",
+  "road_user_classes": [
+    "Car",
+    "Pedestrian"
+  ],
+  "traffic_control_weights": "weights/traffic_control_best.pt",
+  "traffic_control_classes": [
+    "TrafficLight",
+    "TrafficSign"
+  ],
+  "split": "test",
+  "images": 150,
+  "targets": 1007,
+  "overall": {
+    "precision": 0.8080977694836597,
+    "recall": 0.5355521651497798,
+    "mAP50": 0.6396620639606618,
+    "mAP50_95": 0.4690895228499091
+  },
+  "per_class": {
+    "Car": {
+      "precision": 0.9368816657404889,
+      "recall": 0.8279118239775356,
+      "mAP50": 0.9115963484283588,
+      "mAP50_95": 0.7840504278007774,
+      "targets": 502,
+      "true_positives_at_best_f1": 416,
+      "false_positives_at_best_f1": 28
+    },
+    "Pedestrian": {
+      "precision": 0.9785937086276284,
+      "recall": 0.502413165416842,
+      "mAP50": 0.574566029596449,
+      "mAP50_95": 0.36284572835122575,
+      "targets": 91,
+      "true_positives_at_best_f1": 46,
+      "false_positives_at_best_f1": 1
+    },
+    "TrafficLight": {
+      "precision": 0.9048298903027907,
+      "recall": 0.44824730756837766,
+      "mAP50": 0.7343976425237222,
+      "mAP50_95": 0.4546839940711627,
+      "targets": 403,
+      "true_positives_at_best_f1": 181,
+      "false_positives_at_best_f1": 19
+    },
+    "TrafficSign": {
+      "precision": 0.41208581326373117,
+      "recall": 0.36363636363636365,
+      "mAP50": 0.33808823529411763,
+      "mAP50_95": 0.2747779411764706,
+      "targets": 11,
+      "true_positives_at_best_f1": 4,
+      "false_positives_at_best_f1": 6
+    }
+  },
+  "output_dir": "evaluation/traffic_review/before_metrics"
+}

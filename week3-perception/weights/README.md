@@ -1,9 +1,14 @@
-# 模型权重
+# 第三周模型权重
 
-模型权重属于二进制训练产物，不放入 Git 主分支。完整提交包中包含：
+为避免 Git 主分支重复存放二进制模型，完整权重和部署导出文件放在第三周 Release 压缩包中：
 
-- `best.pt`：验证表现最佳的四类别 YOLOv8n 权重，用于评估和推理。
-- `last.pt`：训练结束前最后保存的 checkpoint，用于恢复训练或对比。
+https://github.com/xuzihao723/xiaomi-auto-drive/releases/download/week3-submission/xiaomi_week3.zip
 
-下载并解压 [xiaomi_week3.zip](https://github.com/xuzihao723/xiaomi-auto-drive/releases/download/week3-submission/xiaomi_week3.zip) 后即可获得这两个文件。
+压缩包内包括：
 
+- `road_user_best.pt`、`road_user_last.pt`
+- `traffic_control_best.pt`、`traffic_control_last.pt`
+- `traffic_control_best_fp32.onnx`
+- `traffic_control_best_fp16.engine`
+
+导出清单见 `weights/exported/export_summary.json`。
