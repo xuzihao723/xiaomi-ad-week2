@@ -1,0 +1,72 @@
+{
+  "image_width": 1280,
+  "image_height": 720,
+  "camera_fov": 90.0,
+  "fixed_delta_seconds": 0.05,
+  "npc_vehicles": 80,
+  "walkers": 30,
+  "drive_frames": 120,
+  "drive_stride": 5,
+  "sign_views_per_sign": 0,
+  "scenarios": [
+    {
+      "name": "town05_clear_noon_seed101",
+      "map": "Town05",
+      "weather": "ClearNoon",
+      "seed": 101,
+      "ego_spawn_index": 116,
+      "split": "train"
+    },
+    {
+      "name": "town05_wet_cloudy_seed102",
+      "map": "Town05",
+      "weather": "WetCloudyNoon",
+      "seed": 102,
+      "ego_spawn_index": 16,
+      "split": "train"
+    },
+    {
+      "name": "town05_clear_sunset_seed103",
+      "map": "Town05",
+      "weather": "ClearSunset",
+      "seed": 103,
+      "ego_spawn_index": 216,
+      "split": "train"
+    },
+    {
+      "name": "town05_soft_rain_sunset_seed201",
+      "map": "Town05",
+      "weather": "SoftRainSunset",
+      "seed": 201,
+      "ego_spawn_index": 224,
+      "split": "val"
+    },
+    {
+      "name": "town05_cloudy_noon_seed202",
+      "map": "Town05",
+      "weather": "CloudyNoon",
+      "seed": 202,
+      "ego_spawn_index": 81,
+      "split": "val"
+    },
+    {
+      "name": "town05_hard_rain_seed301",
+      "map": "Town05",
+      "weather": "HardRainNoon",
+      "seed": 301,
+      "ego_spawn_index": 23,
+      "split": "test"
+    },
+    {
+      "name": "town05_clear_night_seed302",
+      "map": "Town05",
+      "weather": "ClearNight",
+      "seed": 302,
+      "ego_spawn_index": 45,
+      "npc_vehicles": 40,
+      "walkers": 10,
+      "drive_frames": 80,
+      "split": "test"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "dataset_root": "E:\\Users\\xiaomi_codex\\xiaomi_week3\\data\\yolo_carla_reviewed",
+  "splits": {
+    "test": {
+      "images": 150,
+      "labels": 150,
+      "empty_labels": 2,
+      "object_counts": {
+        "Car": 502,
+        "Pedestrian": 91,
+        "TrafficLight": 338,
+        "TrafficSign": 20
+      },
+      "frame_counts": {
+        "Car": 135,
+        "Pedestrian": 72,
+        "TrafficLight": 101,
+        "TrafficSign": 17
+      }
+    }
+  }
+}

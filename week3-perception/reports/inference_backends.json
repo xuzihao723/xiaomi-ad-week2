@@ -1,0 +1,25 @@
+{
+  "python": "3.10.12",
+  "torch": "2.10.0+cu126",
+  "torch_cuda": "12.6",
+  "cuda_available": true,
+  "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "ultralytics": "8.4.90",
+  "onnx": {
+    "available": true,
+    "version": "1.21.0"
+  },
+  "onnxruntime": {
+    "available": true,
+    "version": "1.22.0",
+    "providers": [
+      "TensorrtExecutionProvider",
+      "CUDAExecutionProvider",
+      "CPUExecutionProvider"
+    ]
+  },
+  "tensorrt": {
+    "available": true,
+    "version": "11.1.0.106"
+  }
+}

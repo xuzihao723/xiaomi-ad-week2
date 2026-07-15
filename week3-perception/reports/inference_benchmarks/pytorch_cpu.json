@@ -1,0 +1,17 @@
+{
+  "weights": "weights/traffic_control_best.pt",
+  "secondary_weights": null,
+  "method": "single_model",
+  "source": "data/yolo_carla/images/test",
+  "images": 150,
+  "imgsz": 640,
+  "device": "cpu",
+  "half": false,
+  "preloaded": true,
+  "mean_latency_ms": 18.97003967999993,
+  "median_latency_ms": 18.843392000000847,
+  "p95_latency_ms": 22.29868900000298,
+  "min_latency_ms": 15.891816999999975,
+  "max_latency_ms": 27.736095999998156,
+  "fps": 52.714702597817855
+}

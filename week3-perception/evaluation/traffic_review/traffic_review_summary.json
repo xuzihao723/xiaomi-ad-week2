@@ -1,0 +1,19 @@
+{
+  "images_reviewed": 150,
+  "before": {
+    "TrafficLight": 403,
+    "TrafficSign": 11,
+    "total": 414
+  },
+  "after": {
+    "TrafficLight": 338,
+    "TrafficSign": 20,
+    "total": 358
+  },
+  "operations": {
+    "drop": 92,
+    "reclassify": 6,
+    "add": 36
+  },
+  "source_labels_preserved": true
+}
